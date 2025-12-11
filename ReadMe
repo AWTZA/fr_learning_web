@@ -6,3 +6,4 @@ sudo chown -R ubuntu:www-data /var/www/fr
 sudo chmod -R 775 /var/www/fr
 
 git clone git@github.com:AWTZA/fr_learning
+更新了私钥 测试是否可行
