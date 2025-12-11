@@ -1,1 +1,8 @@
 第一次commit
+sudo nginx -t
+sudo systemctl reload nginx
+
+sudo chown -R ubuntu:www-data /var/www/fr
+sudo chmod -R 775 /var/www/fr
+
+git clone git@github.com:AWTZA/fr_learning
