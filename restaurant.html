@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>在餐厅点餐 · Au restaurant</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem 4rem;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      margin-bottom: 0.25rem;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #eee;
+    }
+    .phrase {
+      margin: 0.5rem 0;
+    }
+    .fr {
+      font-weight: 600;
+    }
+    .zh {
+      color: #555;
+      margin-left: 0.5rem;
+    }
+    button {
+      margin-left: 0.5rem;
+      padding: 0.1rem 0.6rem;
+      font-size: 0.9rem;
+      border-radius: 0.4rem;
+      border: 1px solid #ccc;
+      background: #f8f8f8;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #eee;
+    }
+    .section-audio-buttons {
+      margin-top: 0.75rem;
+    }
+    .global-audio {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 2px solid #ddd;
+    }
+    .role-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      padding: 0.05rem 0.35rem;
+      border-radius: 0.5rem;
+      margin-right: 0.4rem;
+      color: #fff;
+    }
+    .role-client {
+      background: #3b82f6;
+    }
+    .role-server {
+      background: #10b981;
+    }
+  </style>
+</head>
+<body>
+  <h1>在餐厅点餐 · Au restaurant</h1>
+  <div class="subtitle">
+    每句法语都有朗读按钮。页面中的音频文件由 Python 脚本自动生成并保存到 <code>audio/</code> 目录。
+  </div>
+
+  <!-- 1. 进门与问候 -->
+  <section id="greetings" data-section="greetings">
+    <h2>1. 进门与问候 · Arriver au restaurant</h2>
+
+    <div class="phrase">
+      <span class="role-badge role-client">👤 顾客</span>
+      <span class="fr fr-phrase"
+            data-tts-id="greet_01"
+            data-role="client"
+            data-section="greetings">
+        Bonjour, une table pour deux, s'il vous plaît.
+      </span>
+      <span class="zh">你好，请给我们一张两人桌。</span>
+      <button onclick="playAudio('greet_01')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-server">🧑‍🍳 服务员</span>
+      <span class="fr fr-phrase"
+            data-tts-id="greet_02"
+            data-role="server"
+            data-section="greetings">
+        Bonjour, vous avez une réservation ?
+      </span>
+      <span class="zh">你好，请问您有预订吗？</span>
+      <button onclick="playAudio('greet_02')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-client">👤 顾客</span>
+      <span class="fr fr-phrase"
+            data-tts-id="greet_03"
+            data-role="client"
+            data-section="greetings">
+        Non, nous n'avons pas de réservation.
+      </span>
+      <span class="zh">没有，我们没有预订。</span>
+      <button onclick="playAudio('greet_03')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-server">🧑‍🍳 服务员</span>
+      <span class="fr fr-phrase"
+            data-tts-id="greet_04"
+            data-role="server"
+            data-section="greetings">
+        D'accord, suivez-moi, s'il vous plaît.
+      </span>
+      <span class="zh">好的，请跟我来。</span>
+      <button onclick="playAudio('greet_04')">▶ 朗读</button>
+    </div>
+
+    <div class="section-audio-buttons">
+      <button onclick="playSection('greetings')">▶ 播放本节汇总音频</button>
+    </div>
+  </section>
+
+  <!-- 2. 点饮料 -->
+  <section id="drinks" data-section="drinks">
+    <h2>2. 点饮料 · Commander des boissons</h2>
+
+    <div class="phrase">
+      <span class="role-badge role-server">🧑‍🍳 服务员</span>
+      <span class="fr fr-phrase"
+            data-tts-id="drinks_01"
+            data-role="server"
+            data-section="drinks">
+        Vous désirez quelque chose à boire ?
+      </span>
+      <span class="zh">您想喝点什么吗？</span>
+      <button onclick="playAudio('drinks_01')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-client">👤 顾客</span>
+      <span class="fr fr-phrase"
+            data-tts-id="drinks_02"
+            data-role="client"
+            data-section="drinks">
+        Je voudrais un verre d'eau, s'il vous plaît.
+      </span>
+      <span class="zh">我想要一杯水，谢谢。</span>
+      <button onclick="playAudio('drinks_02')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-client">👤 顾客</span>
+      <span class="fr fr-phrase"
+            data-tts-id="drinks_03"
+            data-role="client"
+            data-section="drinks">
+        Et un verre de vin rouge pour mon ami, s'il vous plaît.
+      </span>
+      <span class="zh">再给我的朋友来一杯红酒，谢谢。</span>
+      <button onclick="playAudio('drinks_03')">▶ 朗读</button>
+    </div>
+
+    <div class="section-audio-buttons">
+      <button onclick="playSection('drinks')">▶ 播放本节汇总音频</button>
+    </div>
+  </section>
+
+  <!-- 3. 点菜 -->
+  <section id="ordering" data-section="ordering">
+    <h2>3. 点菜 · Commander les plats</h2>
+
+    <div class="phrase">
+      <span class="role-badge role-server">🧑‍🍳 服务员</span>
+      <span class="fr fr-phrase"
+            data-tts-id="order_01"
+            data-role="server"
+            data-section="ordering">
+        Vous avez choisi ?
+      </span>
+      <span class="zh">您选好了吗？</span>
+      <button onclick="playAudio('order_01')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-client">👤 顾客</span>
+      <span class="fr fr-phrase"
+            data-tts-id="order_02"
+            data-role="client"
+            data-section="ordering">
+        Oui, je vais prendre le steak frites.
+      </span>
+      <span class="zh">是的，我要一份牛排配薯条。</span>
+      <button onclick="playAudio('order_02')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-client">👤 顾客</span>
+      <span class="fr fr-phrase"
+            data-tts-id="order_03"
+            data-role="client"
+            data-section="ordering">
+        Pour moi, ce sera la soupe du jour.
+      </span>
+      <span class="zh">我要一份今日例汤。</span>
+      <button onclick="playAudio('order_03')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-server">🧑‍🍳 服务员</span>
+      <span class="fr fr-phrase"
+            data-tts-id="order_04"
+            data-role="server"
+            data-section="ordering">
+        Très bien, je vous apporte ça tout de suite.
+      </span>
+      <span class="zh">好的，我马上给您端来。</span>
+      <button onclick="playAudio('order_04')">▶ 朗读</button>
+    </div>
+
+    <div class="section-audio-buttons">
+      <button onclick="playSection('ordering')">▶ 播放本节汇总音频</button>
+    </div>
+  </section>
+
+  <!-- 4. 结账 -->
+  <section id="bill" data-section="bill">
+    <h2>4. 结账 · Demander l’addition</h2>
+
+    <div class="phrase">
+      <span class="role-badge role-client">👤 顾客</span>
+      <span class="fr fr-phrase"
+            data-tts-id="bill_01"
+            data-role="client"
+            data-section="bill">
+        L’addition, s’il vous plaît.
+      </span>
+      <span class="zh">请结账。</span>
+      <button onclick="playAudio('bill_01')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-server">🧑‍🍳 服务员</span>
+      <span class="fr fr-phrase"
+            data-tts-id="bill_02"
+            data-role="server"
+            data-section="bill">
+        Vous payez ensemble ou séparément ?
+      </span>
+      <span class="zh">一起付还是分开付？</span>
+      <button onclick="playAudio('bill_02')">▶ 朗读</button>
+    </div>
+
+    <div class="phrase">
+      <span class="role-badge role-client">👤 顾客</span>
+      <span class="fr fr-phrase"
+            data-tts-id="bill_03"
+            data-role="client"
+            data-section="bill">
+        Ensemble, par carte, s’il vous plaît.
+      </span>
+      <span class="zh">一起付，用卡，谢谢。</span>
+      <button onclick="playAudio('bill_03')">▶ 朗读</button>
+    </div>
+
+    <div class="section-audio-buttons">
+      <button onclick="playSection('bill')">▶ 播放本节汇总音频</button>
+    </div>
+  </section>
+
+  <!-- 全局汇总按钮 -->
+  <div class="global-audio">
+    <h2>🔊 汇总音频</h2>
+    <p>这些音频由 Python 脚本根据上面的句子自动生成：</p>
+    <button onclick="playGlobal('role_client')">▶ 只播放顾客台词</button>
+    <button onclick="playGlobal('role_server')">▶ 只播放服务员台词</button>
+    <button onclick="playGlobal('all')">▶ 播放全部台词汇总</button>
+  </div>
+
+  <!-- 音频标签（文件由 Python 生成） -->
+  <!-- 单句 -->
+  <audio id="audio-greet_01" src="audio/restaurant_greet_01.mp3"></audio>
+  <audio id="audio-greet_02" src="audio/restaurant_greet_02.mp3"></audio>
+  <audio id="audio-greet_03" src="audio/restaurant_greet_03.mp3"></audio>
+  <audio id="audio-greet_04" src="audio/restaurant_greet_04.mp3"></audio>
+
+  <audio id="audio-drinks_01" src="audio/restaurant_drinks_01.mp3"></audio>
+  <audio id="audio-drinks_02" src="audio/restaurant_drinks_02.mp3"></audio>
+  <audio id="audio-drinks_03" src="audio/restaurant_drinks_03.mp3"></audio>
+
+  <audio id="audio-order_01" src="audio/restaurant_order_01.mp3"></audio>
+  <audio id="audio-order_02" src="audio/restaurant_order_02.mp3"></audio>
+  <audio id="audio-order_03" src="audio/restaurant_order_03.mp3"></audio>
+  <audio id="audio-order_04" src="audio/restaurant_order_04.mp3"></audio>
+
+  <audio id="audio-bill_01" src="audio/restaurant_bill_01.mp3"></audio>
+  <audio id="audio-bill_02" src="audio/restaurant_bill_02.mp3"></audio>
+  <audio id="audio-bill_03" src="audio/restaurant_bill_03.mp3"></audio>
+
+  <!-- 每节汇总 -->
+  <audio id="audio-section-greetings" src="audio/restaurant_section_greetings.mp3"></audio>
+  <audio id="audio-section-drinks" src="audio/restaurant_section_drinks.mp3"></audio>
+  <audio id="audio-section-ordering" src="audio/restaurant_section_ordering.mp3"></audio>
+  <audio id="audio-section-bill" src="audio/restaurant_section_bill.mp3"></audio>
+
+  <!-- 全局汇总 -->
+  <audio id="audio-global-role_client" src="audio/restaurant_role_client.mp3"></audio>
+  <audio id="audio-global-role_server" src="audio/restaurant_role_server.mp3"></audio>
+  <audio id="audio-global-all" src="audio/restaurant_all.mp3"></audio>
+
+  <script>
+    function playAudio(ttsId) {
+      const audio = document.getElementById('audio-' + ttsId);
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play();
+      } else {
+        console.warn('Audio not found for', ttsId);
+      }
+    }
+
+    function playSection(sectionId) {
+      const audio = document.getElementById('audio-section-' + sectionId);
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play();
+      } else {
+        console.warn('Section audio not found for', sectionId);
+      }
+    }
+
+    function playGlobal(kind) {
+      const id = kind === 'all'
+        ? 'audio-global-all'
+        : (kind === 'role_client'
+          ? 'audio-global-role_client'
+          : 'audio-global-role_server');
+      const audio = document.getElementById(id);
+      if (audio) {
+        audio.currentTime = 0;
+        audio.play();
+      } else {
+        console.warn('Global audio not found for', kind);
+      }
+    }
+  </script>
+</body>
+</html>
