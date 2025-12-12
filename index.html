@@ -4,28 +4,104 @@
   <meta charset="UTF-8" />
   <title>French Learning Index - fr.awtza.com</title>
   <style>
-    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-           max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
-    h1 { margin-bottom: 0.5rem; }
-    .subtitle { color: #666; margin-bottom: 1.5rem; }
-    ul { list-style: none; padding-left: 0; }
-    li { margin: 0.5rem 0; }
-    a { text-decoration: none; color: inherit; }
-    .card { padding: 0.75rem 1rem; border-radius: 0.5rem;
-            border: 1px solid #ddd; transition: box-shadow 0.2s, transform 0.1s; }
-    .card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.08); transform: translateY(-1px); }
-    .filename { font-size: 0.85rem; color: #999; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: #f7f7f7;
+    }
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card {
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ddd;
+      transition: box-shadow 0.2s, transform 0.1s, border-color 0.2s;
+      background: #fff;
+    }
+    .card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transform: translateY(-1px);
+      border-color: #bbb;
+    }
+    .title-line {
+      font-size: 0.98rem;
+      margin-bottom: 0.2rem;
+    }
+    .title-zh {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 0.2rem;
+    }
+    .desc {
+      font-size: 0.86rem;
+      color: #666;
+      margin-bottom: 0.2rem;
+    }
+    .filename {
+      font-size: 0.8rem;
+      color: #999;
+    }
+    .links {
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      color: #666;
+    }
+    .links a {
+      color: #1976d2;
+      margin-right: 0.5rem;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <h1>📚 Bruce 的法语学习首页</h1>
-  <div class="subtitle">自动生成目录 · 最后更新：2025-12-11 13:02</div>
+  <div class="subtitle">自动生成目录 · 最后更新：2025-12-11 18:06</div>
   <ul>
     <li>
-      <a href="restaurant.html">
+      <a href="build/daily_50.html">
         <div class="card">
-          <div>在餐厅点餐 · Au restaurant</div>
+          <div class="title-line">Daily 50 French Sentences - Day 1</div>
+          <div class="title-zh"></div>
+          
+          <div class="filename">daily_50.html</div>
+          <div class="links">
+            <a href="build/daily_50.html">HTML</a> <a href="build/daily_50.md">MD</a> <a href="build/daily_50.csv">CSV</a> <a href="build/daily_50.xlsx">XLSX</a>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="build/restaurant.html">
+        <div class="card">
+          <div class="title-line">restaurant</div>
+          <div class="title-zh"></div>
+          
           <div class="filename">restaurant.html</div>
+          <div class="links">
+            <a href="build/restaurant.html">HTML</a>
+          </div>
         </div>
       </a>
     </li>

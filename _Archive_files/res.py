@@ -1,6 +1,10 @@
 import os
 from google.cloud import texttospeech
 from pydub import AudioSegment
+from pathlib import Path
+from typing import Any, Dict, List
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = r"C:\Users\11796\OneDrive\桌面\Web Dev\dns-credit-08cf1716327e.json"
 
 OUTPUT_DIR = "audio"
 
@@ -20,7 +24,7 @@ CLIENT_VOICE = texttospeech.VoiceSelectionParams(
 
 AUDIO_CONFIG = texttospeech.AudioConfig(
     audio_encoding=texttospeech.AudioEncoding.MP3,
-    speaking_rate=1.0,
+    speaking_rate=0.85,
 )
 
 # -----------------------------
@@ -162,9 +166,9 @@ def generate_individual_files():
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     for line_id, text, role, section in ALL_LINES:
         out_path = os.path.join(OUTPUT_DIR, f"{line_id}.mp3")
-        if os.path.exists(out_path):
-            print(f"[SKIP] {out_path} already exists")
-            continue
+        # if os.path.exists(out_path):
+        #     print(f"[SKIP] {out_path} already exists")
+        #     continue
         print(f"[TTS] {line_id} ({role}) -> {out_path}")
         audio_bytes = synthesize_line(text, role)
         with open(out_path, "wb") as f:

@@ -7,3 +7,5 @@ sudo chmod -R 775 /var/www/fr
 
 git clone git@github.com:AWTZA/fr_learning_web /var/www/fr
 更新了私钥 测试是否可行
+
+更新了python代码 只需要json就可以生成学习网页

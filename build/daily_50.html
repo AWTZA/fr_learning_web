@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily 50 French Sentences - Day 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #ffb347, #ffcc33);
+            padding: 1.2rem 1.5rem;
+            color: #222;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+        }
+        header p {
+            margin: 0.3rem 0 0;
+            font-size: 0.9rem;
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.2rem 1rem 2rem;
+        }
+        .tips {
+            background: #fff;
+            border-radius: 0.8rem;
+            padding: 0.8rem 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .phrase {
+            background: #fff;
+            border-radius: 0.9rem;
+            padding: 0.8rem 0.9rem;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .num {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #ff9800;
+            width: 2.2rem;
+            text-align: center;
+        }
+        .text {
+            flex: 1;
+        }
+        .fr {
+            font-weight: 600;
+            margin-bottom: 0.15rem;
+        }
+        .zh {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .speak-btn {
+            border: none;
+            border-radius: 999px;
+            padding: 0.4rem 0.65rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            background: #ff9800;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .speak-btn:hover {
+            opacity: 0.9;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            padding: 1rem 0 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daily 50 French Sentences - Day 1</h1>
+        <p>daily_50</p>
+    </header>
+    <main>
+        <section class="tips">
+            <strong>使用方法：</strong>先看<b>法语句子</b>再对照<b>中文意思</b>，
+            点右边的<b>▶️</b>听音频。优先播放 mp3，失败时用浏览器朗读兜底。
+        </section>
+        <div class="phrase" id="daily_50_01" data-fr="Comment ça va ?" data-audio="audio/daily_50/01.mp3">
+            <div class="num">01</div>
+            <div class="text">
+                <div class="fr">Comment ça va ?</div>
+                <div class="zh">你好吗？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_02" data-fr="Je vais bien, merci." data-audio="audio/daily_50/02.mp3">
+            <div class="num">02</div>
+            <div class="text">
+                <div class="fr">Je vais bien, merci.</div>
+                <div class="zh">我很好，谢谢。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_03" data-fr="Tu fais quoi ?" data-audio="audio/daily_50/03.mp3">
+            <div class="num">03</div>
+            <div class="text">
+                <div class="fr">Tu fais quoi ?</div>
+                <div class="zh">你在忙什么？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_04" data-fr="On commence ?" data-audio="audio/daily_50/04.mp3">
+            <div class="num">04</div>
+            <div class="text">
+                <div class="fr">On commence ?</div>
+                <div class="zh">我们开始吧？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_05" data-fr="Attends une seconde." data-audio="audio/daily_50/05.mp3">
+            <div class="num">05</div>
+            <div class="text">
+                <div class="fr">Attends une seconde.</div>
+                <div class="zh">等一下。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_06" data-fr="Je reviens tout de suite." data-audio="audio/daily_50/06.mp3">
+            <div class="num">06</div>
+            <div class="text">
+                <div class="fr">Je reviens tout de suite.</div>
+                <div class="zh">我马上回来。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_07" data-fr="Désolé de t'avoir fait attendre." data-audio="audio/daily_50/07.mp3">
+            <div class="num">07</div>
+            <div class="text">
+                <div class="fr">Désolé de t'avoir fait attendre.</div>
+                <div class="zh">抱歉让你久等了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_08" data-fr="Ce n’est pas grave." data-audio="audio/daily_50/08.mp3">
+            <div class="num">08</div>
+            <div class="text">
+                <div class="fr">Ce n’est pas grave.</div>
+                <div class="zh">没关系。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_09" data-fr="Tu peux m’aider ?" data-audio="audio/daily_50/09.mp3">
+            <div class="num">09</div>
+            <div class="text">
+                <div class="fr">Tu peux m’aider ?</div>
+                <div class="zh">你能帮我一下吗？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_10" data-fr="Bien sûr." data-audio="audio/daily_50/10.mp3">
+            <div class="num">10</div>
+            <div class="text">
+                <div class="fr">Bien sûr.</div>
+                <div class="zh">当然可以。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_11" data-fr="Je ne suis pas sûr." data-audio="audio/daily_50/11.mp3">
+            <div class="num">11</div>
+            <div class="text">
+                <div class="fr">Je ne suis pas sûr.</div>
+                <div class="zh">我不太确定。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_12" data-fr="Répète, s'il te plaît." data-audio="audio/daily_50/12.mp3">
+            <div class="num">12</div>
+            <div class="text">
+                <div class="fr">Répète, s'il te plaît.</div>
+                <div class="zh">再说一遍。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_13" data-fr="Plus lentement." data-audio="audio/daily_50/13.mp3">
+            <div class="num">13</div>
+            <div class="text">
+                <div class="fr">Plus lentement.</div>
+                <div class="zh">慢一点。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_14" data-fr="Je comprends." data-audio="audio/daily_50/14.mp3">
+            <div class="num">14</div>
+            <div class="text">
+                <div class="fr">Je comprends.</div>
+                <div class="zh">我明白了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_15" data-fr="Je ne comprends pas." data-audio="audio/daily_50/15.mp3">
+            <div class="num">15</div>
+            <div class="text">
+                <div class="fr">Je ne comprends pas.</div>
+                <div class="zh">我不明白。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_16" data-fr="Qu’est-ce que c’est ?" data-audio="audio/daily_50/16.mp3">
+            <div class="num">16</div>
+            <div class="text">
+                <div class="fr">Qu’est-ce que c’est ?</div>
+                <div class="zh">这是什么？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_17" data-fr="Qu’est-ce que tu en penses ?" data-audio="audio/daily_50/17.mp3">
+            <div class="num">17</div>
+            <div class="text">
+                <div class="fr">Qu’est-ce que tu en penses ?</div>
+                <div class="zh">你觉得怎么样？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_18" data-fr="Ça a l’air bien." data-audio="audio/daily_50/18.mp3">
+            <div class="num">18</div>
+            <div class="text">
+                <div class="fr">Ça a l’air bien.</div>
+                <div class="zh">听起来不错。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_19" data-fr="Laisse-moi voir." data-audio="audio/daily_50/19.mp3">
+            <div class="num">19</div>
+            <div class="text">
+                <div class="fr">Laisse-moi voir.</div>
+                <div class="zh">让我看看。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_20" data-fr="C’est important." data-audio="audio/daily_50/20.mp3">
+            <div class="num">20</div>
+            <div class="text">
+                <div class="fr">C’est important.</div>
+                <div class="zh">这很重要。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_21" data-fr="Tu es prêt ?" data-audio="audio/daily_50/21.mp3">
+            <div class="num">21</div>
+            <div class="text">
+                <div class="fr">Tu es prêt ?</div>
+                <div class="zh">你准备好了吗？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_22" data-fr="Je suis prêt." data-audio="audio/daily_50/22.mp3">
+            <div class="num">22</div>
+            <div class="text">
+                <div class="fr">Je suis prêt.</div>
+                <div class="zh">我准备好了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_23" data-fr="On y va." data-audio="audio/daily_50/23.mp3">
+            <div class="num">23</div>
+            <div class="text">
+                <div class="fr">On y va.</div>
+                <div class="zh">现在开始吧／走吧。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_24" data-fr="Je suis d’accord." data-audio="audio/daily_50/24.mp3">
+            <div class="num">24</div>
+            <div class="text">
+                <div class="fr">Je suis d’accord.</div>
+                <div class="zh">我同意。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_25" data-fr="Je ne suis pas d’accord." data-audio="audio/daily_50/25.mp3">
+            <div class="num">25</div>
+            <div class="text">
+                <div class="fr">Je ne suis pas d’accord.</div>
+                <div class="zh">我不同意。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_26" data-fr="Attends un peu." data-audio="audio/daily_50/26.mp3">
+            <div class="num">26</div>
+            <div class="text">
+                <div class="fr">Attends un peu.</div>
+                <div class="zh">给我一点时间。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_27" data-fr="C’est difficile." data-audio="audio/daily_50/27.mp3">
+            <div class="num">27</div>
+            <div class="text">
+                <div class="fr">C’est difficile.</div>
+                <div class="zh">这太难了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_28" data-fr="C’est facile." data-audio="audio/daily_50/28.mp3">
+            <div class="num">28</div>
+            <div class="text">
+                <div class="fr">C’est facile.</div>
+                <div class="zh">这很简单。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_29" data-fr="Qu’est-ce que tu veux dire ?" data-audio="audio/daily_50/29.mp3">
+            <div class="num">29</div>
+            <div class="text">
+                <div class="fr">Qu’est-ce que tu veux dire ?</div>
+                <div class="zh">你什么意思？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_30" data-fr="Tu peux expliquer ?" data-audio="audio/daily_50/30.mp3">
+            <div class="num">30</div>
+            <div class="text">
+                <div class="fr">Tu peux expliquer ?</div>
+                <div class="zh">你能解释一下吗？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_31" data-fr="Attends-moi." data-audio="audio/daily_50/31.mp3">
+            <div class="num">31</div>
+            <div class="text">
+                <div class="fr">Attends-moi.</div>
+                <div class="zh">等等我。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_32" data-fr="Vas-y." data-audio="audio/daily_50/32.mp3">
+            <div class="num">32</div>
+            <div class="text">
+                <div class="fr">Vas-y.</div>
+                <div class="zh">去吧／你先。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_33" data-fr="J’aime ça." data-audio="audio/daily_50/33.mp3">
+            <div class="num">33</div>
+            <div class="text">
+                <div class="fr">J’aime ça.</div>
+                <div class="zh">我喜欢这个。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_34" data-fr="Je n’aime pas ça." data-audio="audio/daily_50/34.mp3">
+            <div class="num">34</div>
+            <div class="text">
+                <div class="fr">Je n’aime pas ça.</div>
+                <div class="zh">我不喜欢这个。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_35" data-fr="Vraiment ?" data-audio="audio/daily_50/35.mp3">
+            <div class="num">35</div>
+            <div class="text">
+                <div class="fr">Vraiment ?</div>
+                <div class="zh">真的吗？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_36" data-fr="Bien sûr." data-audio="audio/daily_50/36.mp3">
+            <div class="num">36</div>
+            <div class="text">
+                <div class="fr">Bien sûr.</div>
+                <div class="zh">当然。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_37" data-fr="Génial !" data-audio="audio/daily_50/37.mp3">
+            <div class="num">37</div>
+            <div class="text">
+                <div class="fr">Génial !</div>
+                <div class="zh">太好了！</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_38" data-fr="C’est nul." data-audio="audio/daily_50/38.mp3">
+            <div class="num">38</div>
+            <div class="text">
+                <div class="fr">C’est nul.</div>
+                <div class="zh">太糟了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_39" data-fr="Pas de problème." data-audio="audio/daily_50/39.mp3">
+            <div class="num">39</div>
+            <div class="text">
+                <div class="fr">Pas de problème.</div>
+                <div class="zh">没问题。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_40" data-fr="Peut-être." data-audio="audio/daily_50/40.mp3">
+            <div class="num">40</div>
+            <div class="text">
+                <div class="fr">Peut-être.</div>
+                <div class="zh">可能吧。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_41" data-fr="Absolument pas." data-audio="audio/daily_50/41.mp3">
+            <div class="num">41</div>
+            <div class="text">
+                <div class="fr">Absolument pas.</div>
+                <div class="zh">绝对不行。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_42" data-fr="Je suis fatigué." data-audio="audio/daily_50/42.mp3">
+            <div class="num">42</div>
+            <div class="text">
+                <div class="fr">Je suis fatigué.</div>
+                <div class="zh">我累了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_43" data-fr="J’ai faim." data-audio="audio/daily_50/43.mp3">
+            <div class="num">43</div>
+            <div class="text">
+                <div class="fr">J’ai faim.</div>
+                <div class="zh">我饿了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_44" data-fr="J’ai soif." data-audio="audio/daily_50/44.mp3">
+            <div class="num">44</div>
+            <div class="text">
+                <div class="fr">J’ai soif.</div>
+                <div class="zh">我渴了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_45" data-fr="On fait une pause ?" data-audio="audio/daily_50/45.mp3">
+            <div class="num">45</div>
+            <div class="text">
+                <div class="fr">On fait une pause ?</div>
+                <div class="zh">我们休息一下吧？</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_46" data-fr="Le temps est écoulé." data-audio="audio/daily_50/46.mp3">
+            <div class="num">46</div>
+            <div class="text">
+                <div class="fr">Le temps est écoulé.</div>
+                <div class="zh">时间到了。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_47" data-fr="C’est tout pour aujourd’hui." data-audio="audio/daily_50/47.mp3">
+            <div class="num">47</div>
+            <div class="text">
+                <div class="fr">C’est tout pour aujourd’hui.</div>
+                <div class="zh">今天到这里。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_48" data-fr="À demain." data-audio="audio/daily_50/48.mp3">
+            <div class="num">48</div>
+            <div class="text">
+                <div class="fr">À demain.</div>
+                <div class="zh">明天见。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_49" data-fr="Merci." data-audio="audio/daily_50/49.mp3">
+            <div class="num">49</div>
+            <div class="text">
+                <div class="fr">Merci.</div>
+                <div class="zh">谢谢你。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+
+        <div class="phrase" id="daily_50_50" data-fr="De rien." data-audio="audio/daily_50/50.mp3">
+            <div class="num">50</div>
+            <div class="text">
+                <div class="fr">De rien.</div>
+                <div class="zh">不客气。</div>
+            </div>
+            <button class="speak-btn" onclick="playSentence(this.closest('.phrase'))">▶️</button>
+        </div>
+    </main>
+    <footer>
+        Français · AWTZA
+    </footer>
+    <script>
+        const globalAudio = new Audio();
+
+        function speakFallback(text) {
+            if (!("speechSynthesis" in window)) {
+                alert("Votre navigateur ne supporte pas la synthèse vocale.");
+                return;
+            }
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "fr-FR";
+            u.rate = 0.85;
+            u.pitch = 1.0;
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(u);
+        }
+
+        function playSentence(phraseEl) {
+            const text = phraseEl.dataset.fr || "";
+            const src = phraseEl.dataset.audio || "";
+
+            if (src) {
+                try {
+                    globalAudio.pause();
+                    globalAudio.src = src;
+                    globalAudio.currentTime = 0;
+                    globalAudio.play().catch(function() {
+                        speakFallback(text);
+                    });
+                } catch (e) {
+                    console.error(e);
+                    speakFallback(text);
+                }
+            } else {
+                speakFallback(text);
+            }
+        }
+    </script>
+</body>
+</html>

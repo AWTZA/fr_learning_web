@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Français – 50 phrases de la vie quotidienne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(135deg, #ffb347, #ffcc33);
+            padding: 1.2rem 1.5rem;
+            color: #222;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.6rem;
+        }
+        header p {
+            margin: 0.3rem 0 0;
+            font-size: 0.9rem;
+        }
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.2rem 1rem 2rem;
+        }
+        .tips {
+            background: #fff;
+            border-radius: 0.8rem;
+            padding: 0.8rem 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        .phrase {
+            background: #fff;
+            border-radius: 0.9rem;
+            padding: 0.8rem 0.9rem;
+            margin-bottom: 0.6rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .num {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #ff9800;
+            width: 2.2rem;
+            text-align: center;
+        }
+        .text {
+            flex: 1;
+        }
+        .fr {
+            font-weight: 600;
+            margin-bottom: 0.15rem;
+        }
+        .zh {
+            font-size: 0.9rem;
+            color: #555;
+        }
+        .speak-btn {
+            border: none;
+            border-radius: 999px;
+            padding: 0.4rem 0.65rem;
+            cursor: pointer;
+            font-size: 0.9rem;
+            background: #ff9800;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .speak-btn:hover {
+            opacity: 0.9;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            padding: 1rem 0 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>50 phrases de la vie quotidienne</h1>
+        <p>日常对话常用 50 句 · Cliquez sur ▶️ pour 听法语发音</p>
+    </header>
+    <main>
+        <section class="tips">
+            <strong>使用方法：</strong>先看<b>法语句子</b>再对照<b>中文意思</b>，
+            最后点右边的<b>▶️</b>跟读。语速比正常略慢，适合初学者。
+        </section>
+        <div class="phrase" id="p1" data-fr="Bonjour !">
+            <div class="num">01</div>
+            <div class="text">
+                <div class="fr">Bonjour !</div>
+                <div class="zh">你好！（白天打招呼）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p2" data-fr="Salut !">
+            <div class="num">02</div>
+            <div class="text">
+                <div class="fr">Salut !</div>
+                <div class="zh">嗨！ / 你好！（比较随意）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p3" data-fr="Ça va ?">
+            <div class="num">03</div>
+            <div class="text">
+                <div class="fr">Ça va ?</div>
+                <div class="zh">最近怎么样？ / 还好吗？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p4" data-fr="Ça va bien, merci. Et toi ?">
+            <div class="num">04</div>
+            <div class="text">
+                <div class="fr">Ça va bien, merci. Et toi ?</div>
+                <div class="zh">我很好，谢谢，你呢？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p5" data-fr="Comment tu t’appelles ?">
+            <div class="num">05</div>
+            <div class="text">
+                <div class="fr">Comment tu t’appelles ?</div>
+                <div class="zh">你叫什么名字？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p6" data-fr="Je m’appelle …">
+            <div class="num">06</div>
+            <div class="text">
+                <div class="fr">Je m’appelle …</div>
+                <div class="zh">我叫……</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p7" data-fr="Enchanté.">
+            <div class="num">07</div>
+            <div class="text">
+                <div class="fr">Enchanté.</div>
+                <div class="zh">幸会。（男生说）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p8" data-fr="Tu viens d’où ?">
+            <div class="num">08</div>
+            <div class="text">
+                <div class="fr">Tu viens d’où ?</div>
+                <div class="zh">你来自哪里？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p9" data-fr="Je viens de Chine.">
+            <div class="num">09</div>
+            <div class="text">
+                <div class="fr">Je viens de Chine.</div>
+                <div class="zh">我来自中国。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p10" data-fr="Tu habites où maintenant ?">
+            <div class="num">10</div>
+            <div class="text">
+                <div class="fr">Tu habites où maintenant ?</div>
+                <div class="zh">你现在住在哪里？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p11" data-fr="J’habite à Vancouver.">
+            <div class="num">11</div>
+            <div class="text">
+                <div class="fr">J’habite à Vancouver.</div>
+                <div class="zh">我住在温哥华。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p12" data-fr="Qu’est-ce que tu fais dans la vie ?">
+            <div class="num">12</div>
+            <div class="text">
+                <div class="fr">Qu’est-ce que tu fais dans la vie ?</div>
+                <div class="zh">你是做什么工作的？ / 你平时做什么？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p13" data-fr="Je suis étudiant.">
+            <div class="num">13</div>
+            <div class="text">
+                <div class="fr">Je suis étudiant.</div>
+                <div class="zh">我是学生。（男）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p14" data-fr="Je suis étudiante.">
+            <div class="num">14</div>
+            <div class="text">
+                <div class="fr">Je suis étudiante.</div>
+                <div class="zh">我是学生。（女）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p15" data-fr="Je travaille dans l’informatique.">
+            <div class="num">15</div>
+            <div class="text">
+                <div class="fr">Je travaille dans l’informatique.</div>
+                <div class="zh">我在 IT 行业工作。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p16" data-fr="Tu parles quelles langues ?">
+            <div class="num">16</div>
+            <div class="text">
+                <div class="fr">Tu parles quelles langues ?</div>
+                <div class="zh">你会说哪些语言？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p17" data-fr="Je parle chinois, anglais et un peu français.">
+            <div class="num">17</div>
+            <div class="text">
+                <div class="fr">Je parle chinois, anglais et un peu français.</div>
+                <div class="zh">我会说中文、英文和一点法语。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p18" data-fr="Tu peux répéter, s’il te plaît ?">
+            <div class="num">18</div>
+            <div class="text">
+                <div class="fr">Tu peux répéter, s’il te plaît ?</div>
+                <div class="zh">你可以再说一遍吗？（朋友间）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p19" data-fr="Tu peux parler plus lentement, s’il te plaît ?">
+            <div class="num">19</div>
+            <div class="text">
+                <div class="fr">Tu peux parler plus lentement, s’il te plaît ?</div>
+                <div class="zh">你可以说慢一点吗？（朋友间）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p20" data-fr="Je ne comprends pas.">
+            <div class="num">20</div>
+            <div class="text">
+                <div class="fr">Je ne comprends pas.</div>
+                <div class="zh">我不明白。 / 我听不懂。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p21" data-fr="Tu peux l’écrire, s’il te plaît ?">
+            <div class="num">21</div>
+            <div class="text">
+                <div class="fr">Tu peux l’écrire, s’il te plaît ?</div>
+                <div class="zh">你可以写下来吗？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p22" data-fr="Qu’est-ce que ça veut dire ?">
+            <div class="num">22</div>
+            <div class="text">
+                <div class="fr">Qu’est-ce que ça veut dire ?</div>
+                <div class="zh">这是什么意思？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p23" data-fr="Tu es libre ce week-end ?">
+            <div class="num">23</div>
+            <div class="text">
+                <div class="fr">Tu es libre ce week-end ?</div>
+                <div class="zh">你这个周末有空吗？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p24" data-fr="On se voit quand ?">
+            <div class="num">24</div>
+            <div class="text">
+                <div class="fr">On se voit quand ?</div>
+                <div class="zh">我们什么时候见面？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p25" data-fr="On se voit demain ?">
+            <div class="num">25</div>
+            <div class="text">
+                <div class="fr">On se voit demain ?</div>
+                <div class="zh">我们明天见面吗？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p26" data-fr="À quelle heure ?">
+            <div class="num">26</div>
+            <div class="text">
+                <div class="fr">À quelle heure ?</div>
+                <div class="zh">几点？ / 什么时间？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p27" data-fr="Où on se retrouve ?">
+            <div class="num">27</div>
+            <div class="text">
+                <div class="fr">Où on se retrouve ?</div>
+                <div class="zh">我们在哪里见面？ / 在哪儿碰头？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p28" data-fr="Ça te va ?">
+            <div class="num">28</div>
+            <div class="text">
+                <div class="fr">Ça te va ?</div>
+                <div class="zh">这样可以吗？ / 合适吗？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p29" data-fr="Pas de problème.">
+            <div class="num">29</div>
+            <div class="text">
+                <div class="fr">Pas de problème.</div>
+                <div class="zh">没问题。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p30" data-fr="Merci beaucoup.">
+            <div class="num">30</div>
+            <div class="text">
+                <div class="fr">Merci beaucoup.</div>
+                <div class="zh">非常感谢。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p31" data-fr="De rien.">
+            <div class="num">31</div>
+            <div class="text">
+                <div class="fr">De rien.</div>
+                <div class="zh">不客气。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p32" data-fr="Excuse-moi.">
+            <div class="num">32</div>
+            <div class="text">
+                <div class="fr">Excuse-moi.</div>
+                <div class="zh">不好意思。（朋友间）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p33" data-fr="Pardon, je suis en retard.">
+            <div class="num">33</div>
+            <div class="text">
+                <div class="fr">Pardon, je suis en retard.</div>
+                <div class="zh">不好意思，我迟到了。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p34" data-fr="Ce n’est pas grave.">
+            <div class="num">34</div>
+            <div class="text">
+                <div class="fr">Ce n’est pas grave.</div>
+                <div class="zh">没关系。 / 不要紧。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p35" data-fr="J’aime beaucoup cette ville.">
+            <div class="num">35</div>
+            <div class="text">
+                <div class="fr">J’aime beaucoup cette ville.</div>
+                <div class="zh">我很喜欢这座城市。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p36" data-fr="Il fait beau aujourd’hui.">
+            <div class="num">36</div>
+            <div class="text">
+                <div class="fr">Il fait beau aujourd’hui.</div>
+                <div class="zh">今天天气很好。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p37" data-fr="J’ai faim.">
+            <div class="num">37</div>
+            <div class="text">
+                <div class="fr">J’ai faim.</div>
+                <div class="zh">我饿了。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p38" data-fr="J’ai soif.">
+            <div class="num">38</div>
+            <div class="text">
+                <div class="fr">J’ai soif.</div>
+                <div class="zh">我渴了。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p39" data-fr="Je suis fatigué.">
+            <div class="num">39</div>
+            <div class="text">
+                <div class="fr">Je suis fatigué.</div>
+                <div class="zh">我累了。（男）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p40" data-fr="Je suis fatiguée.">
+            <div class="num">40</div>
+            <div class="text">
+                <div class="fr">Je suis fatiguée.</div>
+                <div class="zh">我累了。（女）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p41" data-fr="J’ai besoin de dormir.">
+            <div class="num">41</div>
+            <div class="text">
+                <div class="fr">J’ai besoin de dormir.</div>
+                <div class="zh">我需要睡觉了。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p42" data-fr="On y va ?">
+            <div class="num">42</div>
+            <div class="text">
+                <div class="fr">On y va ?</div>
+                <div class="zh">我们走吗？ / 出发吗？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p43" data-fr="Attends une minute, s’il te plaît.">
+            <div class="num">43</div>
+            <div class="text">
+                <div class="fr">Attends une minute, s’il te plaît.</div>
+                <div class="zh">等一下，拜托。（等我一下）</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p44" data-fr="Tu peux m’aider ?">
+            <div class="num">44</div>
+            <div class="text">
+                <div class="fr">Tu peux m’aider ?</div>
+                <div class="zh">你能帮我一下吗？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p45" data-fr="Comment on dit ça en français ?">
+            <div class="num">45</div>
+            <div class="text">
+                <div class="fr">Comment on dit ça en français ?</div>
+                <div class="zh">这个用法语怎么说？</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p46" data-fr="Je dois y aller.">
+            <div class="num">46</div>
+            <div class="text">
+                <div class="fr">Je dois y aller.</div>
+                <div class="zh">我得走了。</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p47" data-fr="À tout à l’heure !">
+            <div class="num">47</div>
+            <div class="text">
+                <div class="fr">À tout à l’heure !</div>
+                <div class="zh">一会儿见！</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p48" data-fr="À demain !">
+            <div class="num">48</div>
+            <div class="text">
+                <div class="fr">À demain !</div>
+                <div class="zh">明天见！</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p49" data-fr="Bonne journée !">
+            <div class="num">49</div>
+            <div class="text">
+                <div class="fr">Bonne journée !</div>
+                <div class="zh">祝你今天愉快！</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+
+        <div class="phrase" id="p50" data-fr="Bonne soirée !">
+            <div class="num">50</div>
+            <div class="text">
+                <div class="fr">Bonne soirée !</div>
+                <div class="zh">祝你晚上愉快！</div>
+            </div>
+            <button class="speak-btn" onclick="speak(this.closest('.phrase').dataset.fr)">▶️</button>
+        </div>
+    </main>
+    <footer>
+        Français · Vie quotidienne · AWTZA
+    </footer>
+    <script>
+        function speak(text) {
+            if (!("speechSynthesis" in window)) {
+                alert("Votre navigateur ne supporte pas la synthèse vocale.");
+                return;
+            }
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = "fr-FR";
+            u.rate = 0.85;  // 比正常略慢
+            u.pitch = 1.0;
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(u);
+        }
+    </script>
+</body>
+</html>
