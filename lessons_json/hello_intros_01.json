@@ -1,0 +1,42 @@
+{
+  "id": "hello_intros_01",
+  "title": "Bonjour ! — Se présenter",
+  "title_zh": "你好！— 自我介绍与称呼",
+  "description": "Se saluer, donner son prénom et parler de son surnom.",
+  "description_zh": "打招呼、自我介绍、介绍外号。",
+  "passage": {
+    "fr": "Bonjour ! Salut ! Coucou, ça va ? Je m’appelle Romain. Moi, c’est Milla. Et moi, c’est Inès. Je suis au collège Massillon. Mes copains m’appellent Gaspacho. Mon surnom, c’est « la licorne ». Au revoir !",
+    "zh": "你好！嗨！你好吗？我叫Romain。我是Milla。我是Inès。我在Massillon中学。朋友们叫我Gaspacho。我的外号是“独角兽”。再见！"
+  },
+  "sentences": [
+    { "fr": "Bonjour !", "zh": "你好！（正式/白天）" },
+    { "fr": "Salut !", "zh": "嗨！（随意）" },
+    { "fr": "Coucou, ça va ?", "zh": "嗨，你好吗？（更随意）" },
+    { "fr": "Je m’appelle …", "zh": "我叫……" },
+    { "fr": "Moi, c’est …", "zh": "我叫……（口语）" },
+    { "fr": "Je suis au collège …", "zh": "我在……中学。" },
+    { "fr": "Je suis en …", "zh": "我在……年级/班。" },
+    { "fr": "Mes copains m’appellent …", "zh": "我的朋友们叫我……（外号）" },
+    { "fr": "Mon surnom, c’est …", "zh": "我的外号是……" },
+    { "fr": "Elle s’appelle …", "zh": "她叫……" },
+    { "fr": "Au revoir !", "zh": "再见！" }
+  ],
+  "vocab_nouns": [
+    { "fr": "le collège", "zh": "初中" },
+    { "fr": "la classe", "zh": "班级；课堂" },
+    { "fr": "la professeure", "zh": "女老师" },
+    { "fr": "un élève", "zh": "学生" },
+    { "fr": "les copains", "zh": "朋友们（口语）" },
+    { "fr": "le surnom", "zh": "外号；昵称" },
+    { "fr": "le prénom", "zh": "名字（名）" }
+  ],
+  "vocab_verbs": [
+    { "fr": "s’appeler", "zh": "叫做；名字是" },
+    { "fr": "être", "zh": "是；在" },
+    { "fr": "appeler", "zh": "称呼；叫" }
+  ],
+  "summary_article": {
+    "fr": "Dans la classe, les élèves se saluent et se présentent. Ils disent leur prénom, leur classe ou leur collège, et certains parlent de leur surnom. L’ambiance est simple et amicale, puis tout le monde se dit au revoir.",
+    "zh": "在班级里，同学们互相打招呼并自我介绍。大家说出名字、班级或学校，有的人还介绍外号。气氛轻松友好，最后大家道别。"
+  }
+}

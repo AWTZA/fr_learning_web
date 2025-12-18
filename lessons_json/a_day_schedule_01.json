@@ -1,0 +1,48 @@
+{
+  "id": "a_day_schedule_01",
+  "title": "A day! — Une journée au collège",
+  "title_zh": "一天！— 学校的一天与时间表达",
+  "description": "Heures, cours, cantine, sport et devoirs.",
+  "description_zh": "时间表达、上课、食堂、体育和作业。",
+  "passage": {
+    "fr": "On est lundi, il est neuf heures. Je suis en cours de français et je fais un devoir. Il est dix heures dix et je suis en retard pour mon cours de maths. À midi, on va à la cantine. L’après-midi, je joue au foot, puis c’est la récré. Enfin, on fait nos devoirs et on rentre à la maison.",
+    "zh": "今天周一，九点。我在上法语课并写作业。十点十分，我数学课要迟到了。中午我们去食堂。下午我踢足球，然后课间休息。最后我们做作业并回家。"
+  },
+  "sentences": [
+    { "fr": "On est lundi, il est neuf heures.", "zh": "今天周一，现在九点。" },
+    { "fr": "Je suis en cours de français.", "zh": "我在上法语课。" },
+    { "fr": "Je fais un devoir.", "zh": "我在写作业。" },
+    { "fr": "Je suis en retard.", "zh": "我迟到了。" },
+    { "fr": "Je suis en retard pour mon cours de maths.", "zh": "我数学课要迟到了。" },
+    { "fr": "D’habitude, on est au gymnase.", "zh": "通常我们在体育馆。" },
+    { "fr": "À midi, on va à la cantine.", "zh": "中午我们去食堂。" },
+    { "fr": "Je suis en train de jouer au foot.", "zh": "我正在踢足球。" },
+    { "fr": "C’est la récré !", "zh": "课间休息了！" },
+    { "fr": "On fait nos devoirs.", "zh": "我们做作业。" },
+    { "fr": "C’est l’heure de rentrer à la maison.", "zh": "该回家了。" }
+  ],
+  "vocab_nouns": [
+    { "fr": "lundi", "zh": "星期一" },
+    { "fr": "l’heure", "zh": "时间；小时" },
+    { "fr": "le cours", "zh": "课程" },
+    { "fr": "un devoir", "zh": "作业" },
+    { "fr": "les maths", "zh": "数学" },
+    { "fr": "le sport", "zh": "体育" },
+    { "fr": "le gymnase", "zh": "体育馆" },
+    { "fr": "la cantine", "zh": "食堂" },
+    { "fr": "le foot", "zh": "足球（口语）" },
+    { "fr": "la récré", "zh": "课间休息（口语）" },
+    { "fr": "la maison", "zh": "家" }
+  ],
+  "vocab_verbs": [
+    { "fr": "être", "zh": "是；在" },
+    { "fr": "faire", "zh": "做" },
+    { "fr": "aller", "zh": "去" },
+    { "fr": "jouer", "zh": "玩；踢（球）" },
+    { "fr": "rentrer", "zh": "回去；回家" }
+  ],
+  "summary_article": {
+    "fr": "Au collège, la journée suit un rythme précis. Le matin, on commence les cours et on fait des devoirs. À midi, on va à la cantine. L’après-midi, il y a du sport, la récré et d’autres cours. En fin de journée, on rentre à la maison.",
+    "zh": "在学校里，一天有固定节奏。早上上课、写作业；中午去食堂；下午有体育、课间休息和其他课程；最后回家。"
+  }
+}

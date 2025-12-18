@@ -1,0 +1,29 @@
+type,#,fr,zh
+passage,,"On est lundi, il est neuf heures. Je suis en cours de français et je fais un devoir. Il est dix heures dix et je suis en retard pour mon cours de maths. À midi, on va à la cantine. L’après-midi, je joue au foot, puis c’est la récré. Enfin, on fait nos devoirs et on rentre à la maison.",今天周一，九点。我在上法语课并写作业。十点十分，我数学课要迟到了。中午我们去食堂。下午我踢足球，然后课间休息。最后我们做作业并回家。
+sentence,1,"On est lundi, il est neuf heures.",今天周一，现在九点。
+sentence,2,Je suis en cours de français.,我在上法语课。
+sentence,3,Je fais un devoir.,我在写作业。
+sentence,4,Je suis en retard.,我迟到了。
+sentence,5,Je suis en retard pour mon cours de maths.,我数学课要迟到了。
+sentence,6,"D’habitude, on est au gymnase.",通常我们在体育馆。
+sentence,7,"À midi, on va à la cantine.",中午我们去食堂。
+sentence,8,Je suis en train de jouer au foot.,我正在踢足球。
+sentence,9,C’est la récré !,课间休息了！
+sentence,10,On fait nos devoirs.,我们做作业。
+sentence,11,C’est l’heure de rentrer à la maison.,该回家了。
+vocab,1,lundi,星期一
+vocab,2,l’heure,时间；小时
+vocab,3,le cours,课程
+vocab,4,un devoir,作业
+vocab,5,les maths,数学
+vocab,6,le sport,体育
+vocab,7,le gymnase,体育馆
+vocab,8,la cantine,食堂
+vocab,9,le foot,足球（口语）
+vocab,10,la récré,课间休息（口语）
+vocab,11,la maison,家
+vocab,12,être,是；在
+vocab,13,faire,做
+vocab,14,aller,去
+vocab,15,jouer,玩；踢（球）
+vocab,16,rentrer,回去；回家

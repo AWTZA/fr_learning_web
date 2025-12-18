@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>A day! — Une journée au collège</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>A day! — Une journée au collège</h1>
+    <p>一天！— 学校的一天与时间表达</p>
+  </header>
+
+  <main class="container">
+    <div class="bar">
+      <span class="pill">📄 <a class="link" href="../index.html">Index</a></span>
+      <span class="pill">📝 <a class="link" href="../exports/a_day_schedule_01.md">MD</a></span>
+      <span class="pill">📑 <a class="link" href="../exports/a_day_schedule_01.csv">CSV</a></span>
+      <span class="pill">📊 <a class="link" href="../exports/a_day_schedule_01.xlsx">XLSX</a></span>
+    </div>
+
+    <section class="card pad col-12">
+      <div class="section-title">
+        <h2>📖 Passage</h2>
+        <div class="hint">整篇朗读（分段 mp3 自动顺序播放）</div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick='playPassage(["../audio/a_day_schedule_01/passage_01.mp3"])'>▶️ Play passage</button>
+        <span class="pill">Segments: 1</span>
+      </div>
+      <div class="divider"></div>
+      <div class="fr">On est lundi, il est neuf heures. Je suis en cours de français et je fais un devoir. Il est dix heures dix et je suis en retard pour mon cours de maths. À midi, on va à la cantine. L’après-midi, je joue au foot, puis c’est la récré. Enfin, on fait nos devoirs et on rentre à la maison.</div>
+      
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">今天周一，九点。我在上法语课并写作业。十点十分，我数学课要迟到了。中午我们去食堂。下午我踢足球，然后课间休息。最后我们做作业并回家。</div>
+      </details>
+    
+    </section>
+
+    <section class="card pad col-12">
+      <div class="section-title">
+        <h2>🧩 Sentences</h2>
+        <div class="hint">单句朗读 + 中文折叠</div>
+      </div>
+      <div class="list">
+
+        <div class="item row" data-fr="On est lundi, il est neuf heures." data-audio="../audio/a_day_schedule_01/sentences/01.mp3">
+          <div class="num">01</div>
+          <div style="flex:1">
+            <div class="fr">On est lundi, il est neuf heures.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">今天周一，现在九点。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="Je suis en cours de français." data-audio="../audio/a_day_schedule_01/sentences/02.mp3">
+          <div class="num">02</div>
+          <div style="flex:1">
+            <div class="fr">Je suis en cours de français.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">我在上法语课。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="Je fais un devoir." data-audio="../audio/a_day_schedule_01/sentences/03.mp3">
+          <div class="num">03</div>
+          <div style="flex:1">
+            <div class="fr">Je fais un devoir.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">我在写作业。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="Je suis en retard." data-audio="../audio/a_day_schedule_01/sentences/04.mp3">
+          <div class="num">04</div>
+          <div style="flex:1">
+            <div class="fr">Je suis en retard.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">我迟到了。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="Je suis en retard pour mon cours de maths." data-audio="../audio/a_day_schedule_01/sentences/05.mp3">
+          <div class="num">05</div>
+          <div style="flex:1">
+            <div class="fr">Je suis en retard pour mon cours de maths.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">我数学课要迟到了。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="D’habitude, on est au gymnase." data-audio="../audio/a_day_schedule_01/sentences/06.mp3">
+          <div class="num">06</div>
+          <div style="flex:1">
+            <div class="fr">D’habitude, on est au gymnase.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">通常我们在体育馆。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="À midi, on va à la cantine." data-audio="../audio/a_day_schedule_01/sentences/07.mp3">
+          <div class="num">07</div>
+          <div style="flex:1">
+            <div class="fr">À midi, on va à la cantine.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">中午我们去食堂。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="Je suis en train de jouer au foot." data-audio="../audio/a_day_schedule_01/sentences/08.mp3">
+          <div class="num">08</div>
+          <div style="flex:1">
+            <div class="fr">Je suis en train de jouer au foot.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">我正在踢足球。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="C’est la récré !" data-audio="../audio/a_day_schedule_01/sentences/09.mp3">
+          <div class="num">09</div>
+          <div style="flex:1">
+            <div class="fr">C’est la récré !</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">课间休息了！</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="On fait nos devoirs." data-audio="../audio/a_day_schedule_01/sentences/10.mp3">
+          <div class="num">10</div>
+          <div style="flex:1">
+            <div class="fr">On fait nos devoirs.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">我们做作业。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="C’est l’heure de rentrer à la maison." data-audio="../audio/a_day_schedule_01/sentences/11.mp3">
+          <div class="num">11</div>
+          <div style="flex:1">
+            <div class="fr">C’est l’heure de rentrer à la maison.</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">该回家了。</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="card pad col-12">
+      <div class="section-title">
+        <h2>🧠 Vocab</h2>
+        <div class="hint">单词朗读 + 中文折叠</div>
+      </div>
+      <div class="list">
+
+        <div class="item row" data-fr="lundi" data-audio="../audio/a_day_schedule_01/words/lundi.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">lundi</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">星期一</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="l’heure" data-audio="../audio/a_day_schedule_01/words/l-heure.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">l’heure</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">时间；小时</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="le cours" data-audio="../audio/a_day_schedule_01/words/le-cours.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">le cours</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">课程</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="un devoir" data-audio="../audio/a_day_schedule_01/words/un-devoir.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">un devoir</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">作业</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="les maths" data-audio="../audio/a_day_schedule_01/words/les-maths.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">les maths</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">数学</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="le sport" data-audio="../audio/a_day_schedule_01/words/le-sport.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">le sport</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">体育</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="le gymnase" data-audio="../audio/a_day_schedule_01/words/le-gymnase.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">le gymnase</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">体育馆</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="la cantine" data-audio="../audio/a_day_schedule_01/words/la-cantine.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">la cantine</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">食堂</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="le foot" data-audio="../audio/a_day_schedule_01/words/le-foot.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">le foot</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">足球（口语）</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="la récré" data-audio="../audio/a_day_schedule_01/words/la-r-cr.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">la récré</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">课间休息（口语）</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="la maison" data-audio="../audio/a_day_schedule_01/words/la-maison.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">la maison</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">家</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="être" data-audio="../audio/a_day_schedule_01/words/tre.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">être</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">是；在</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="faire" data-audio="../audio/a_day_schedule_01/words/faire.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">faire</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">做</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="aller" data-audio="../audio/a_day_schedule_01/words/aller.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">aller</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">去</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="jouer" data-audio="../audio/a_day_schedule_01/words/jouer.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">jouer</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">玩；踢（球）</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="rentrer" data-audio="../audio/a_day_schedule_01/words/rentrer.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">rentrer</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">回去；回家</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="footer">Français · Lesson · AWTZA</div>
+  </main>
+
+  <script>
+    let passageQueue = [];
+    let passageIndex = 0;
+    const passageAudio = new Audio();
+
+    function playPassage(queue){
+      passageQueue = queue || [];
+      passageIndex = 0;
+      if (!passageQueue.length) return;
+      passageAudio.src = passageQueue[0];
+      passageAudio.currentTime = 0;
+      passageAudio.play();
+    }
+
+    passageAudio.addEventListener("ended", () => {
+      passageIndex += 1;
+      if (passageIndex < passageQueue.length){
+        passageAudio.src = passageQueue[passageIndex];
+        passageAudio.currentTime = 0;
+        passageAudio.play();
+      }
+    });
+
+    const globalAudio = new Audio();
+
+    function speakFallback(text){
+      if (!("speechSynthesis" in window)) {
+        alert("Browser TTS not supported.");
+        return;
+      }
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = "fr-FR";
+      u.rate = 0.85;
+      u.pitch = 1.0;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(u);
+    }
+
+    function playFromDataset(el){
+      const text = el.dataset.fr || "";
+      const src = el.dataset.audio || "";
+      if (!src){
+        speakFallback(text);
+        return;
+      }
+      try{
+        globalAudio.pause();
+        globalAudio.src = src;
+        globalAudio.currentTime = 0;
+        globalAudio.play().catch(() => speakFallback(text));
+      }catch(e){
+        speakFallback(text);
+      }
+    }
+  </script>
+</body>
+</html>

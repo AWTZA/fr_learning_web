@@ -1,0 +1,121 @@
+type,#,fr,zh
+passage,,"Bonjour ! Ça va ? Je m’appelle Bruce. Enchanté. Je ne comprends pas. Tu peux répéter, s’il te plaît ? Parle plus lentement, s’il te plaît. Merci beaucoup. De rien. Excuse-moi. Pas de problème. À bientôt !",你好！你还好吗？我叫 Bruce。幸会。我不太明白。你可以重复一遍吗？请说慢一点。非常感谢。不客气。不好意思。没问题。回头见！
+sentence,1,Bonjour !,你好！（白天）
+sentence,2,Bonsoir !,晚上好！
+sentence,3,Salut !,嗨！（随意）
+sentence,4,Ça va ?,你好吗？/最近怎么样？
+sentence,5,"Ça va bien, merci. Et toi ?",我很好，谢谢。你呢？
+sentence,6,Et vous ?,那您呢？（礼貌）
+sentence,7,Comment tu t’appelles ?,你叫什么名字？
+sentence,8,Je m’appelle …,我叫……
+sentence,9,Enchanté.,幸会。（男）
+sentence,10,Enchantée.,幸会。（女）
+sentence,11,D’où viens-tu ?,你来自哪里？
+sentence,12,Je viens de …,我来自……
+sentence,13,Tu habites où ?,你住哪里？
+sentence,14,J’habite à …,我住在……
+sentence,15,Qu’est-ce que tu fais ?,你做什么工作/你在做什么？
+sentence,16,Je suis étudiant / étudiante.,我是学生。
+sentence,17,Je travaille.,我在工作。
+sentence,18,Je ne sais pas.,我不知道。
+sentence,19,Je comprends.,我明白了。
+sentence,20,Je ne comprends pas.,我不明白/听不懂。
+sentence,21,"Tu peux répéter, s’il te plaît ?",你可以重复一遍吗？
+sentence,22,"Tu peux parler plus lentement, s’il te plaît ?",你可以说慢一点吗？
+sentence,23,"Tu peux l’écrire, s’il te plaît ?",你可以写下来吗？
+sentence,24,Qu’est-ce que ça veut dire ?,这是什么意思？
+sentence,25,Pardon ?,什么？（没听清，礼貌）
+sentence,26,Excuse-moi.,不好意思。（熟人/随意）
+sentence,27,Excusez-moi.,不好意思。（礼貌）
+sentence,28,Merci.,谢谢。
+sentence,29,Merci beaucoup.,非常感谢。
+sentence,30,De rien.,不客气。
+sentence,31,S’il te plaît.,请。（熟人）
+sentence,32,S’il vous plaît.,请。（礼貌）
+sentence,33,Pas de problème.,没问题。
+sentence,34,D’accord.,好的/同意。
+sentence,35,Oui.,是/对。
+sentence,36,Non.,不。
+sentence,37,Peut-être.,也许。
+sentence,38,Ça marche.,行/没问题。
+sentence,39,Je suis désolé.,对不起。（男）
+sentence,40,Je suis désolée.,对不起。（女）
+sentence,41,Ça ne fait rien.,没关系/不要紧。
+sentence,42,Où sont les toilettes ?,厕所在哪里？
+sentence,43,Je voudrais …,我想要……（礼貌）
+sentence,44,J’aimerais …,我想……（更委婉）
+sentence,45,Combien ça coûte ?,这个多少钱？
+sentence,46,Je peux payer par carte ?,我可以刷卡吗？
+sentence,47,Je dois y aller.,我得走了。
+sentence,48,À bientôt !,回头见！
+sentence,49,Bonne journée !,祝你今天愉快！
+vocab,1,le temps,时间；天气
+vocab,2,le jour,一天；白天
+vocab,3,la nuit,夜晚
+vocab,4,le matin,早上
+vocab,5,le soir,晚上
+vocab,6,la semaine,周
+vocab,7,le week-end,周末
+vocab,8,la maison,家
+vocab,9,l’appartement,公寓
+vocab,10,la chambre,卧室
+vocab,11,la cuisine,厨房
+vocab,12,la salle de bain,浴室
+vocab,13,les toilettes,厕所
+vocab,14,la rue,街道
+vocab,15,la ville,城市
+vocab,16,le quartier,社区
+vocab,17,le travail,工作
+vocab,18,l’école,学校
+vocab,19,l’université,大学
+vocab,20,le cours,课程
+vocab,21,le bus,公交车
+vocab,22,le métro,地铁
+vocab,23,la voiture,汽车
+vocab,24,le train,火车
+vocab,25,la station,车站
+vocab,26,le magasin,商店
+vocab,27,le supermarché,超市
+vocab,28,le restaurant,餐厅
+vocab,29,le café,咖啡馆；咖啡
+vocab,30,l’eau,水
+vocab,31,le pain,面包
+vocab,32,le repas,一餐；餐
+vocab,33,le menu,菜单
+vocab,34,l’addition,账单
+vocab,35,le prix,价格
+vocab,36,l’argent,钱
+vocab,37,la carte,卡；菜单（语境）
+vocab,38,le téléphone,电话
+vocab,39,le message,消息
+vocab,40,le nom,名字
+vocab,41,la personne,人
+vocab,42,l’ami,朋友（男）
+vocab,43,l’amie,朋友（女）
+vocab,44,la famille,家庭
+vocab,45,le problème,问题
+vocab,46,la question,问题（提问）
+vocab,47,la réponse,回答
+vocab,48,la chose,东西；事情
+vocab,49,la place,位置；座位
+vocab,50,la langue,语言
+vocab,51,être,是；在
+vocab,52,avoir,有
+vocab,53,aller,去
+vocab,54,faire,做
+vocab,55,dire,说
+vocab,56,parler,说（语言）；讲话
+vocab,57,s’appeler,叫做（名字）
+vocab,58,venir,来
+vocab,59,pouvoir,可以；能够
+vocab,60,vouloir,想要
+vocab,61,devoir,必须；得
+vocab,62,savoir,知道（信息）
+vocab,63,comprendre,理解
+vocab,64,prendre,拿；乘坐
+vocab,65,mettre,放；穿（衣服）
+vocab,66,donner,给
+vocab,67,aimer,喜欢；爱
+vocab,68,penser,想；认为
+vocab,69,trouver,找到；觉得
+vocab,70,regarder,看

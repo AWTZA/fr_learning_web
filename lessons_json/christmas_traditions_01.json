@@ -1,0 +1,43 @@
+{
+  "id": "christmas_traditions_01",
+  "title": "Noël — Traditions",
+  "title_zh": "圣诞节 — 传统与习俗",
+  "description": "Sapin, bûche, cadeaux et autres traditions.",
+  "description_zh": "圣诞树、圣诞柴、礼物等传统。",
+  "passage": {
+    "fr": "Noël est une fête très populaire et souvent familiale. On décore un sapin et on partage un repas. La bûche est un dessert traditionnel. On s’offre des cadeaux et on suit aussi des traditions comme le calendrier de l’Avent. Pour beaucoup, Noël est un moment chaleureux à vivre ensemble.",
+    "zh": "圣诞节很受欢迎，常常是家庭节日。人们装饰圣诞树并一起吃饭。圣诞柴是传统甜点。大家互赠礼物，也会使用降临节日历等习俗。对很多人来说，这是一个温暖的团聚时刻。"
+  },
+  "sentences": [
+    { "fr": "Noël est une fête très populaire.", "zh": "圣诞节是一项很受欢迎的节日。" },
+    { "fr": "Pour beaucoup, Noël est une fête de famille.", "zh": "对很多人来说，圣诞节是家庭节日。" },
+    { "fr": "À Noël, on décore un sapin.", "zh": "圣诞节人们会装饰圣诞树。" },
+    { "fr": "On partage un repas en famille.", "zh": "我们与家人一起吃饭。" },
+    { "fr": "La bûche est un dessert traditionnel.", "zh": "圣诞柴是传统甜点。" },
+    { "fr": "On s’offre des cadeaux.", "zh": "人们互赠礼物。" },
+    { "fr": "On utilise un calendrier de l’Avent.", "zh": "人们会用降临节日历。" },
+    { "fr": "Les traditions de Noël sont nombreuses.", "zh": "圣诞传统很多。" }
+  ],
+  "vocab_nouns": [
+    { "fr": "Noël", "zh": "圣诞节" },
+    { "fr": "la fête", "zh": "节日" },
+    { "fr": "la famille", "zh": "家庭" },
+    { "fr": "le sapin", "zh": "圣诞树" },
+    { "fr": "la bûche", "zh": "圣诞柴（甜点）" },
+    { "fr": "un dessert", "zh": "甜点" },
+    { "fr": "un cadeau", "zh": "礼物" },
+    { "fr": "le calendrier de l’Avent", "zh": "降临节日历" },
+    { "fr": "une tradition", "zh": "传统" },
+    { "fr": "un repas", "zh": "一餐" }
+  ],
+  "vocab_verbs": [
+    { "fr": "décorer", "zh": "装饰" },
+    { "fr": "partager", "zh": "分享" },
+    { "fr": "offrir", "zh": "赠送" },
+    { "fr": "utiliser", "zh": "使用" }
+  ],
+  "summary_article": {
+    "fr": "Noël est une fête populaire et familiale. On décore le sapin, on mange ensemble et on partage un dessert comme la bûche. On s’offre des cadeaux et on suit des traditions comme le calendrier de l’Avent. C’est un moment chaleureux à vivre en famille.",
+    "zh": "圣诞节是受欢迎的家庭节日。人们装饰圣诞树、一起吃饭、享用圣诞柴等甜点，互赠礼物，并遵循降临节日历等传统。这是一个温暖的团聚时刻。"
+  }
+}

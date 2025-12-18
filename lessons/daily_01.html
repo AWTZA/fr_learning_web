@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Texte 1 – Bonjour</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Texte 1 – Bonjour</h1>
+    <p>课文1 – 你好</p>
+  </header>
+
+  <main class="container">
+    <div class="bar">
+      <span class="pill">📄 <a class="link" href="../index.html">Index</a></span>
+      <span class="pill">📝 <a class="link" href="../exports/daily_01.md">MD</a></span>
+      <span class="pill">📑 <a class="link" href="../exports/daily_01.csv">CSV</a></span>
+      <span class="pill">📊 <a class="link" href="../exports/daily_01.xlsx">XLSX</a></span>
+    </div>
+
+    <section class="card pad col-12">
+      <div class="section-title">
+        <h2>📖 Passage</h2>
+        <div class="hint">整篇朗读（分段 mp3 自动顺序播放）</div>
+      </div>
+      <div class="actions">
+        <button class="btn" onclick='playPassage(["../audio/daily_01/passage_01.mp3"])'>▶️ Play passage</button>
+        <span class="pill">Segments: 1</span>
+      </div>
+      <div class="divider"></div>
+      <div class="fr">Bonjour ! Je m'appelle ...</div>
+      
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">你好！我叫……</div>
+      </details>
+    
+    </section>
+
+    <section class="card pad col-12">
+      <div class="section-title">
+        <h2>🧩 Sentences</h2>
+        <div class="hint">单句朗读 + 中文折叠</div>
+      </div>
+      <div class="list">
+
+        <div class="item row" data-fr="Bonjour !" data-audio="../audio/daily_01/sentences/01.mp3">
+          <div class="num">01</div>
+          <div style="flex:1">
+            <div class="fr">Bonjour !</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">你好！</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="playFromDataset(this.closest('.item'))">▶️</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="card pad col-12">
+      <div class="section-title">
+        <h2>🧠 Vocab</h2>
+        <div class="hint">单词朗读 + 中文折叠</div>
+      </div>
+      <div class="list">
+
+        <div class="item row" data-fr="bonjour" data-audio="../audio/daily_01/words/bonjour.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">bonjour</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">你好；早上好</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+        <div class="item row" data-fr="merci" data-audio="../audio/daily_01/words/merci.mp3">
+          <div class="num">•</div>
+          <div style="flex:1">
+            <div class="fr">merci</div>
+            
+      <details class="zh">
+        <summary>--</summary>
+        <div class="zh-text">谢谢</div>
+      </details>
+    
+          </div>
+          <div class="actions">
+            <button class="btn ghost" onclick="playFromDataset(this.closest('.item'))">🔊</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="footer">Français · Lesson · AWTZA</div>
+  </main>
+
+  <script>
+    let passageQueue = [];
+    let passageIndex = 0;
+    const passageAudio = new Audio();
+
+    function playPassage(queue){
+      passageQueue = queue || [];
+      passageIndex = 0;
+      if (!passageQueue.length) return;
+      passageAudio.src = passageQueue[0];
+      passageAudio.currentTime = 0;
+      passageAudio.play();
+    }
+
+    passageAudio.addEventListener("ended", () => {
+      passageIndex += 1;
+      if (passageIndex < passageQueue.length){
+        passageAudio.src = passageQueue[passageIndex];
+        passageAudio.currentTime = 0;
+        passageAudio.play();
+      }
+    });
+
+    const globalAudio = new Audio();
+
+    function speakFallback(text){
+      if (!("speechSynthesis" in window)) {
+        alert("Browser TTS not supported.");
+        return;
+      }
+      const u = new SpeechSynthesisUtterance(text);
+      u.lang = "fr-FR";
+      u.rate = 0.85;
+      u.pitch = 1.0;
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(u);
+    }
+
+    function playFromDataset(el){
+      const text = el.dataset.fr || "";
+      const src = el.dataset.audio || "";
+      if (!src){
+        speakFallback(text);
+        return;
+      }
+      try{
+        globalAudio.pause();
+        globalAudio.src = src;
+        globalAudio.currentTime = 0;
+        globalAudio.play().catch(() => speakFallback(text));
+      }catch(e){
+        speakFallback(text);
+      }
+    }
+  </script>
+</body>
+</html>

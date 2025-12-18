@@ -1,0 +1,23 @@
+{
+  "id": "daily_01",
+  "title": "Texte 1 – Bonjour",
+  "title_zh": "课文1 – 你好",
+  "passage": {
+    "fr": "Bonjour ! Je m'appelle ...",
+    "zh": "你好！我叫……"
+  },
+  "sentences": [
+    {
+      "fr": "Bonjour !",
+      "zh": "你好！",
+      "words": [
+        {"fr": "bonjour", "zh": "你好；早上好"},
+        {"fr": "salut", "zh": "嗨（随意）"}
+      ]
+    }
+  ],
+  "vocab": [
+    {"fr": "bonjour", "zh": "你好；早上好"},
+    {"fr": "merci", "zh": "谢谢"}
+  ]
+}

@@ -1,0 +1,23 @@
+type,#,fr,zh
+passage,,"Bonjour ! Salut ! Coucou, ça va ? Je m’appelle Romain. Moi, c’est Milla. Et moi, c’est Inès. Je suis au collège Massillon. Mes copains m’appellent Gaspacho. Mon surnom, c’est « la licorne ». Au revoir !",你好！嗨！你好吗？我叫Romain。我是Milla。我是Inès。我在Massillon中学。朋友们叫我Gaspacho。我的外号是“独角兽”。再见！
+sentence,1,Bonjour !,你好！（正式/白天）
+sentence,2,Salut !,嗨！（随意）
+sentence,3,"Coucou, ça va ?",嗨，你好吗？（更随意）
+sentence,4,Je m’appelle …,我叫……
+sentence,5,"Moi, c’est …",我叫……（口语）
+sentence,6,Je suis au collège …,我在……中学。
+sentence,7,Je suis en …,我在……年级/班。
+sentence,8,Mes copains m’appellent …,我的朋友们叫我……（外号）
+sentence,9,"Mon surnom, c’est …",我的外号是……
+sentence,10,Elle s’appelle …,她叫……
+sentence,11,Au revoir !,再见！
+vocab,1,le collège,初中
+vocab,2,la classe,班级；课堂
+vocab,3,la professeure,女老师
+vocab,4,un élève,学生
+vocab,5,les copains,朋友们（口语）
+vocab,6,le surnom,外号；昵称
+vocab,7,le prénom,名字（名）
+vocab,8,s’appeler,叫做；名字是
+vocab,9,être,是；在
+vocab,10,appeler,称呼；叫

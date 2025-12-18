@@ -1,0 +1,48 @@
+{
+  "id": "flexitarianism_01",
+  "title": "Flexitarisme — Manger moins de viande",
+  "title_zh": "弹性素食 — 少吃肉的趋势",
+  "description": "Manger surtout végétal, avec un peu de viande de temps en temps.",
+  "description_zh": "以植物性食物为主，偶尔吃肉。",
+  "passage": {
+    "fr": "Le flexitarisme est une tendance actuelle. On mange surtout des fruits, des légumes, des œufs et des produits laitiers, mais on ne s’interdit pas de manger un peu de viande de temps en temps. Beaucoup veulent diminuer la viande rouge pour la santé et pour la planète, car l’élevage intensif pollue.",
+    "zh": "弹性素食是一种当下趋势。人们主要吃水果、蔬菜、鸡蛋和乳制品，但不会禁止偶尔吃一点肉。许多人减少红肉摄入是为了健康与环境，因为集约化养殖会造成污染。"
+  },
+  "sentences": [
+    { "fr": "Le flexitarisme se développe.", "zh": "弹性素食正在流行/发展。" },
+    { "fr": "C’est une tendance du moment.", "zh": "这是当下的趋势。" },
+    { "fr": "On mange surtout des fruits et des légumes.", "zh": "人们主要吃水果和蔬菜。" },
+    { "fr": "On mange aussi des œufs et des produits laitiers.", "zh": "也会吃鸡蛋和乳制品。" },
+    { "fr": "On ne s’interdit pas un morceau de viande de temps en temps.", "zh": "偶尔也不禁止吃一块肉。" },
+    { "fr": "Beaucoup veulent diminuer la viande rouge.", "zh": "很多人想减少红肉。" },
+    { "fr": "L’excès n’est pas bon pour la santé.", "zh": "过量对健康不好。" },
+    { "fr": "Ce n’est pas bon pour la planète non plus.", "zh": "对地球环境也不好。" },
+    { "fr": "L’élevage intensif pollue.", "zh": "集约化养殖会造成污染。" }
+  ],
+  "vocab_nouns": [
+    { "fr": "le flexitarisme", "zh": "弹性素食" },
+    { "fr": "une tendance", "zh": "趋势" },
+    { "fr": "le principe", "zh": "原则" },
+    { "fr": "des fruits", "zh": "水果" },
+    { "fr": "des légumes", "zh": "蔬菜" },
+    { "fr": "des œufs", "zh": "鸡蛋" },
+    { "fr": "des produits laitiers", "zh": "乳制品" },
+    { "fr": "la viande", "zh": "肉" },
+    { "fr": "la viande rouge", "zh": "红肉" },
+    { "fr": "la santé", "zh": "健康" },
+    { "fr": "la planète", "zh": "地球；环境" },
+    { "fr": "l’élevage intensif", "zh": "集约化养殖" },
+    { "fr": "la pollution", "zh": "污染" }
+  ],
+  "vocab_verbs": [
+    { "fr": "manger", "zh": "吃" },
+    { "fr": "se développer", "zh": "发展；流行" },
+    { "fr": "s’interdire", "zh": "禁止自己做" },
+    { "fr": "diminuer", "zh": "减少" },
+    { "fr": "polluer", "zh": "污染" }
+  ],
+  "summary_article": {
+    "fr": "Le flexitarisme est une tendance : on mange surtout végétal, mais on garde la possibilité de manger un peu de viande. Beaucoup veulent réduire la viande rouge pour la santé et pour l’environnement. Cette prise de conscience change les habitudes alimentaires.",
+    "zh": "弹性素食的做法是以植物性食物为主，但仍允许偶尔吃肉。人们减少红肉是出于健康和环保考虑。这种意识提升正在改变饮食习惯。"
+  }
+}

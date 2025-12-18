@@ -2,109 +2,107 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>French Learning Index - fr.awtza.com</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      background: #f7f7f7;
-    }
-    h1 {
-      margin-bottom: 0.5rem;
-    }
-    .subtitle {
-      color: #666;
-      margin-bottom: 1.5rem;
-      font-size: 0.9rem;
-    }
-    ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-    li {
-      margin: 0.5rem 0;
-    }
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-    .card {
-      padding: 0.75rem 1rem;
-      border-radius: 0.5rem;
-      border: 1px solid #ddd;
-      transition: box-shadow 0.2s, transform 0.1s, border-color 0.2s;
-      background: #fff;
-    }
-    .card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      transform: translateY(-1px);
-      border-color: #bbb;
-    }
-    .title-line {
-      font-size: 0.98rem;
-      margin-bottom: 0.2rem;
-    }
-    .title-zh {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 0.2rem;
-    }
-    .desc {
-      font-size: 0.86rem;
-      color: #666;
-      margin-bottom: 0.2rem;
-    }
-    .filename {
-      font-size: 0.8rem;
-      color: #999;
-    }
-    .links {
-      margin-top: 0.25rem;
-      font-size: 0.8rem;
-      color: #666;
-    }
-    .links a {
-      color: #1976d2;
-      margin-right: 0.5rem;
-    }
-    .links a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>French Learning Index</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <h1>📚 Bruce 的法语学习首页</h1>
-  <div class="subtitle">自动生成目录 · 最后更新：2025-12-11 18:06</div>
-  <ul>
-    <li>
-      <a href="build/daily_50.html">
-        <div class="card">
-          <div class="title-line">Daily 50 French Sentences - Day 1</div>
-          <div class="title-zh"></div>
-          
-          <div class="filename">daily_50.html</div>
-          <div class="links">
-            <a href="build/daily_50.html">HTML</a> <a href="build/daily_50.md">MD</a> <a href="build/daily_50.csv">CSV</a> <a href="build/daily_50.xlsx">XLSX</a>
+  <header class="header">
+    <h1>📚 Bruce 的法语学习首页</h1>
+    <p>统一模板 + 自动生成 · 最后更新：2025-12-17 17:56</p>
+  </header>
+
+  <main class="container">
+    <div class="card pad">
+      <div class="section-title">
+        <h2>Leçons</h2>
+        <div class="hint">6 lessons</div>
+      </div>
+
+      <div class="list">
+        
+        <a href="lessons/a_day_schedule_01.html">
+          <div class="item">
+            <div class="fr">A day! — Une journée au collège</div>
+            <div class="muted">一天！— 学校的一天与时间表达</div>
+            <div class="kv">
+              <span><a class="link" href="lessons/a_day_schedule_01.html">HTML</a></span>
+              <span><a class="link" href="exports/a_day_schedule_01.md">MD</a></span>
+              <span><a class="link" href="exports/a_day_schedule_01.csv">CSV</a></span>
+              <span><a class="link" href="exports/a_day_schedule_01.xlsx">XLSX</a></span>
+              <span class="muted">audio/a_day_schedule_01/…</span>
+            </div>
           </div>
-        </div>
-      </a>
-    </li>
-    <li>
-      <a href="build/restaurant.html">
-        <div class="card">
-          <div class="title-line">restaurant</div>
-          <div class="title-zh"></div>
-          
-          <div class="filename">restaurant.html</div>
-          <div class="links">
-            <a href="build/restaurant.html">HTML</a>
+        </a>
+        <a href="lessons/christmas_traditions_01.html">
+          <div class="item">
+            <div class="fr">Noël — Traditions</div>
+            <div class="muted">圣诞节 — 传统与习俗</div>
+            <div class="kv">
+              <span><a class="link" href="lessons/christmas_traditions_01.html">HTML</a></span>
+              <span><a class="link" href="exports/christmas_traditions_01.md">MD</a></span>
+              <span><a class="link" href="exports/christmas_traditions_01.csv">CSV</a></span>
+              <span><a class="link" href="exports/christmas_traditions_01.xlsx">XLSX</a></span>
+              <span class="muted">audio/christmas_traditions_01/…</span>
+            </div>
           </div>
-        </div>
-      </a>
-    </li>
-  </ul>
+        </a>
+        <a href="lessons/daily_top_50.html">
+          <div class="item">
+            <div class="fr">Top 50 phrases du quotidien</div>
+            <div class="muted">日常最高频50句话</div>
+            <div class="kv">
+              <span><a class="link" href="lessons/daily_top_50.html">HTML</a></span>
+              <span><a class="link" href="exports/daily_top_50.md">MD</a></span>
+              <span><a class="link" href="exports/daily_top_50.csv">CSV</a></span>
+              <span><a class="link" href="exports/daily_top_50.xlsx">XLSX</a></span>
+              <span class="muted">audio/daily_top_50/…</span>
+            </div>
+          </div>
+        </a>
+        <a href="lessons/daily_01.html">
+          <div class="item">
+            <div class="fr">Texte 1 – Bonjour</div>
+            <div class="muted">课文1 – 你好</div>
+            <div class="kv">
+              <span><a class="link" href="lessons/daily_01.html">HTML</a></span>
+              <span><a class="link" href="exports/daily_01.md">MD</a></span>
+              <span><a class="link" href="exports/daily_01.csv">CSV</a></span>
+              <span><a class="link" href="exports/daily_01.xlsx">XLSX</a></span>
+              <span class="muted">audio/daily_01/…</span>
+            </div>
+          </div>
+        </a>
+        <a href="lessons/flexitarianism_01.html">
+          <div class="item">
+            <div class="fr">Flexitarisme — Manger moins de viande</div>
+            <div class="muted">弹性素食 — 少吃肉的趋势</div>
+            <div class="kv">
+              <span><a class="link" href="lessons/flexitarianism_01.html">HTML</a></span>
+              <span><a class="link" href="exports/flexitarianism_01.md">MD</a></span>
+              <span><a class="link" href="exports/flexitarianism_01.csv">CSV</a></span>
+              <span><a class="link" href="exports/flexitarianism_01.xlsx">XLSX</a></span>
+              <span class="muted">audio/flexitarianism_01/…</span>
+            </div>
+          </div>
+        </a>
+        <a href="lessons/hello_intros_01.html">
+          <div class="item">
+            <div class="fr">Bonjour ! — Se présenter</div>
+            <div class="muted">你好！— 自我介绍与称呼</div>
+            <div class="kv">
+              <span><a class="link" href="lessons/hello_intros_01.html">HTML</a></span>
+              <span><a class="link" href="exports/hello_intros_01.md">MD</a></span>
+              <span><a class="link" href="exports/hello_intros_01.csv">CSV</a></span>
+              <span><a class="link" href="exports/hello_intros_01.xlsx">XLSX</a></span>
+              <span class="muted">audio/hello_intros_01/…</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer">Français · AWTZA</div>
+  </main>
 </body>
 </html>
