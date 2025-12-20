@@ -1,0 +1,53 @@
+{
+  "id": "vive_le_vent_learning_01",
+  "title": "Vive le Vent — Chanson de Noël (apprentissage)",
+  "title_zh": "《Vive le Vent》— 圣诞歌学习",
+  "description": "Vocabulaire d’hiver + phrases chantées courantes.",
+  "description_zh": "冬天主题词汇 + 常用唱句练习。",
+  "passage": {
+    "fr": "En hiver, le vent souffle et siffle dans les arbres. Les chemins sont blancs de neige, les maisons sont chaleureuses et tout le monde se prépare pour les fêtes. On chante, on écoute les cloches, on partage de bons moments et on souhaite une bonne année.",
+    "zh": "冬天里，风在树间呼啸。道路被白雪覆盖，家里温暖，大家为节日做准备。我们唱歌、听铃声、一起度过美好时光，并互祝新年快乐。"
+  },
+  "sentences": [
+    { "fr": "Vive le vent d’hiver !", "zh": "冬天的风万岁！（常见唱句）" },
+    { "fr": "Le vent siffle dans les branches.", "zh": "风在树枝间呼啸。" },
+    { "fr": "La neige tombe doucement.", "zh": "雪轻轻落下。" },
+    { "fr": "Les chemins sont tout blancs.", "zh": "路都变得雪白。" },
+    { "fr": "On se réunit près du feu.", "zh": "我们围坐在火炉旁。" },
+    { "fr": "Dans chaque maison, il y a un air de fête.", "zh": "每个家里都有节日气氛。" },
+    { "fr": "On entend des cloches dans la nuit.", "zh": "夜里能听到铃声。" },
+    { "fr": "Joyeux Noël à tous !", "zh": "祝大家圣诞快乐！" },
+    { "fr": "Bonne année !", "zh": "新年快乐！" },
+    { "fr": "J’aime l’hiver.", "zh": "我喜欢冬天。" }
+  ],
+  "vocab_nouns": [
+    { "fr": "le vent", "zh": "风" },
+    { "fr": "l’hiver", "zh": "冬天" },
+    { "fr": "la neige", "zh": "雪" },
+    { "fr": "un chemin", "zh": "道路；小路" },
+    { "fr": "un arbre", "zh": "树" },
+    { "fr": "une branche", "zh": "树枝" },
+    { "fr": "un sapin", "zh": "杉树；圣诞树" },
+    { "fr": "un village", "zh": "村庄" },
+    { "fr": "une maison", "zh": "房子；家" },
+    { "fr": "un feu", "zh": "火；火炉" },
+    { "fr": "une fête", "zh": "节日；庆祝" },
+    { "fr": "une cloche", "zh": "铃；钟" },
+    { "fr": "la nuit", "zh": "夜晚" },
+    { "fr": "un air", "zh": "气氛；旋律（语境）" },
+    { "fr": "une année", "zh": "一年" }
+  ],
+  "vocab_verbs": [
+    { "fr": "souffler", "zh": "吹（风）" },
+    { "fr": "siffler", "zh": "呼啸；吹口哨" },
+    { "fr": "tomber", "zh": "落下（雪/雨）" },
+    { "fr": "entendre", "zh": "听见" },
+    { "fr": "chanter", "zh": "唱歌" },
+    { "fr": "se réunir", "zh": "聚在一起" },
+    { "fr": "souhaiter", "zh": "祝愿" }
+  ],
+  "summary_article": {
+    "fr": "Cette leçon reprend l’ambiance de “Vive le Vent” : le vent, la neige, la nuit et la fête. On apprend des phrases simples pour décrire l’hiver et pour souhaiter un joyeux Noël et une bonne année.",
+    "zh": "这节课围绕《Vive le Vent》的冬日氛围：风、雪、夜晚与节日。你会学到描述冬天的简单句，以及祝福圣诞和新年的表达。"
+  }
+}

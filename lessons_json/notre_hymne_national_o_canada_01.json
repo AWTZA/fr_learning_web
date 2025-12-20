@@ -1,0 +1,52 @@
+{
+  "id": "notre_hymne_national_o_canada_01",
+  "title": "Notre Hymne national — Ô Canada (apprentissage)",
+  "title_zh": "《我们的国歌》— Ô Canada 法语学习",
+  "description": "Vocabulaire patriotique + phrases clés (sans paroles complètes).",
+  "description_zh": "爱国主题词汇 + 关键句练习（不含完整歌词）。",
+  "passage": {
+    "fr": "Ô Canada est un chant symbolique. On y parle de la patrie, de l’histoire, de la fierté et du courage. Cette leçon te fait pratiquer des phrases courtes pour prononcer clairement et comprendre le vocabulaire de l’hymne.",
+    "zh": "《Ô Canada》是一首具有象征意义的歌曲。内容涉及祖国、历史、自豪与勇气。本课用短句帮助你练发音并理解国歌常用词汇。"
+  },
+  "sentences": [
+    { "fr": "Ô Canada !", "zh": "噢，加拿大！" },
+    { "fr": "C’est notre hymne national.", "zh": "这是我们的国歌。" },
+    { "fr": "Je suis fier / fière de mon pays.", "zh": "我为我的国家感到自豪。" },
+    { "fr": "Notre histoire est importante.", "zh": "我们的历史很重要。" },
+    { "fr": "On protège notre terre.", "zh": "我们保护我们的土地。" },
+    { "fr": "On reste unis.", "zh": "我们保持团结。" },
+    { "fr": "Je respecte notre drapeau.", "zh": "我尊重我们的国旗。" },
+    { "fr": "Je chante avec la classe.", "zh": "我和同学一起唱。" },
+    { "fr": "La liberté compte beaucoup.", "zh": "自由非常重要。" },
+    { "fr": "Ensemble, on avance.", "zh": "我们一起向前。" }
+  ],
+  "vocab_nouns": [
+    { "fr": "le Canada", "zh": "加拿大" },
+    { "fr": "un hymne", "zh": "颂歌；国歌" },
+    { "fr": "la patrie", "zh": "祖国" },
+    { "fr": "un pays", "zh": "国家" },
+    { "fr": "la terre", "zh": "土地；大地" },
+    { "fr": "l’histoire", "zh": "历史" },
+    { "fr": "la fierté", "zh": "自豪" },
+    { "fr": "le courage", "zh": "勇气" },
+    { "fr": "la liberté", "zh": "自由" },
+    { "fr": "le drapeau", "zh": "国旗" },
+    { "fr": "un symbole", "zh": "象征" },
+    { "fr": "une voix", "zh": "声音" },
+    { "fr": "un vers", "zh": "诗句（歌词的一行）" },
+    { "fr": "une nation", "zh": "民族；国家" },
+    { "fr": "une valeur", "zh": "价值观" }
+  ],
+  "vocab_verbs": [
+    { "fr": "chanter", "zh": "唱" },
+    { "fr": "protéger", "zh": "保护" },
+    { "fr": "respecter", "zh": "尊重" },
+    { "fr": "rester", "zh": "保持；停留" },
+    { "fr": "avancer", "zh": "前进" },
+    { "fr": "unir", "zh": "团结；联合" }
+  ],
+  "summary_article": {
+    "fr": "Cette leçon te fait apprendre le vocabulaire essentiel autour de “Ô Canada” : patrie, histoire, fierté, liberté. Avec des phrases courtes, tu peux t’entraîner à la prononciation et parler de ton pays avec respect.",
+    "zh": "本课学习《Ô Canada》相关核心词：祖国、历史、自豪、自由等。用短句练发音，也能更自然地表达对国家的尊重。"
+  }
+}
